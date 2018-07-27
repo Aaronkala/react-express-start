@@ -1,0 +1,48 @@
+{
+  "name": "react-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server/index.js",
+  "scripts": {
+    "error": "webpack --display-error-details --mode development",
+    "start": "node src/server/index.js",
+    "build": "webpack --mode production",
+    "client": "webpack-dev-server --hot --mode development",
+    "server": "nodemon src/server/index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Aaron Hakala",
+  "license": "ISC",
+  "dependencies": {
+    "express": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-hot-loader": "*",
+    "polished": "*",
+    "styled-components": "*",
+    "prop-types": "*"
+  },
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-plugin-transform-object-rest-spread": "*",
+    "babel-preset-env": "*",
+    "babel-preset-react": "*",
+    "babel-preset-stage-1": "^6.24.1",
+    "clean-webpack-plugin": "*",
+    "concurrently": "*",
+    "css-loader": "*",
+    "eslint": "*",
+    "eslint-config-airbnb": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-jsx-a11y": "*",
+    "eslint-plugin-react": "*",
+    "file-loader": "*",
+    "html-webpack-plugin": "*",
+    "nodemon": "*",
+    "style-loader": "*",
+    "webpack": "*",
+    "webpack-cli": "*",
+    "webpack-dev-server": "*"
+  }
+}
